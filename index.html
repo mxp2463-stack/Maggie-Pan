@@ -1,11 +1,195 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title> Maggie Pan</title>
-  </head>
-</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name</title>
+  <meta name="description" content="Your Name — personal website, projects, resume, and contact." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
 <body>
-  <h1>Hello, I'm Maggie Pan</h1>
-  <p>Welcome to my personal website</p>
-  <p>Architecture/University of Miami</p>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Go to top">Your Name</a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="btn btn-ghost" type="button" aria-label="Toggle theme">
+        Theme
+      </button>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+    <!-- HERO -->
+    <section class="hero" aria-label="Intro">
+      <div class="heroText">
+        <p class="kicker">Major • University of Miami</p>
+        <h1>Your Name</h1>
+        <p class="lead">
+          Welcome to my personal website — here you’ll find a bit about me, selected projects, my resume, and ways to connect.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact</a>
+        </div>
+
+        <div class="social" aria-label="Social links">
+          <!-- GitHub (replace YOUR_GITHUB with your username or full URL) -->
+          <a class="iconBtn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <!-- GitHub SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.31 6.84 9.66.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.12-1.52-1.12-1.52-.91-.64.07-.63.07-.63 1.01.07 1.54 1.06 1.54 1.06.9 1.57 2.36 1.12 2.94.86.09-.66.35-1.12.64-1.37-2.22-.26-4.56-1.15-4.56-5.12 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.06.8-.23 1.66-.35 2.52-.35.86 0 1.72.12 2.52.35 1.91-1.33 2.75-1.06 2.75-1.06.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.77 0 3.98-2.34 4.86-4.57 5.12.36.32.69.95.69 1.92 0 1.38-.01 2.5-.01 2.84 0 .26.18.59.69.48A10.05 10.05 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a class="iconBtn" href="https://www.linkedin.com/in/matisohn-huynh-41662228a/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <!-- LinkedIn SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.45 20.45h-3.55v-5.56c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.66-1.86 3.41-1.86 3.65 0 4.33 2.4 4.33 5.52v6.23zM5.34 7.44a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+            </svg>
+          </a>
+
+          <!-- Email -->
+          <a class="iconBtn" href="mailto:yourname@email.com" aria-label="Email">
+            <!-- Mail SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="heroMedia">
+        <!-- Put your photo in the repo as profile.jpg (or update the src) -->
+        <img class="avatar" src="profile.jpg" alt="Photo of Matisohn Huynh" />
+        <div class="miniCard">
+          <div class="miniRow">
+            <span class="label">Email</span>
+            <span class="value">matihuynh@gmail.com</span>
+          </div>
+          <div class="miniRow">
+            <span class="label">LinkedIn</span>
+            <span class="value">/your-name-41662228a</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="sectionHead">
+        <h2>About Me</h2>
+        <p>Defining possible.</p>
+      </div>
+
+      <div class="card wide">
+        <p>
+          I’m Your Name, major student at the University of Miami interested in building practical,
+          real-world systems. I enjoy hands-on engineering work, collaboration, and learning technologies that launch!
+        </p>
+        <p class="muted">
+         3-6 sentences about yourself.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="sectionHead">
+        <h2>Projects</h2>
+        <p>Replace these with your real projects (title + 1–2 lines + links).</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Project Title</h3>
+          <p>What you built + why it matters (impact/learning).</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>GitHub Pages</span>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Live</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Embedded / ARMv7 Work</h3>
+          <p>Interrupt handling, GIC, interfacing experiments (add a short highlight).</p>
+          <div class="tags">
+            <span>C</span><span>ARM</span><span>DE1-SoC</span>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Write-up</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Controls / MATLAB</h3>
+          <p>Modeling, simulation, design work (add 1 outcome or key result).</p>
+          <div class="tags">
+            <span>MATLAB</span><span>Control Systems</span>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Report</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <div class="sectionHead">
+        <h2>Resume</h2>
+        <p>Upload your resume to this repo as <strong>resume.pdf</strong>.</p>
+      </div>
+
+      <div class="card wide resumeCard">
+        <p>
+          <strong>Download:</strong>
+          <a href="resume.pdf" target="_blank" rel="noreferrer">resume.pdf</a>
+        </p>
+        <p class="muted">
+          Tip: Keep the file name exactly <code>resume.pdf</code> so the link never breaks.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="sectionHead">
+        <h2>Contact</h2>
+        <p>Best ways to reach me.</p>
+      </div>
+
+      <div class="contact">
+        <a class="btn" href="mailto:matihuynh@gmail.com">Email Me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/matisohn-huynh-41662228a/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <!-- GitHub placeholder -->
+        <a class="btn btn-ghost" href="https://github.com/matisohnhuynh" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Your Name </span>
+      <span class="dot">•</span>
+      <a href="#top">Back to top</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
+</html>
